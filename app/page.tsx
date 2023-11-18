@@ -12,6 +12,15 @@ const App = () => {
         https://github.com/idootop/all-seeing-eye
       </a>
       <p>Arbitrary File Read Vulnerability in Chrome Versions Prior to 116</p>
+      <img
+        src="demo.jpg"
+        alt="demo"
+        style={{
+          width: "100%",
+          borderRadius: "10px",
+          boxShadow: "0 10px 32px rgba(0,0,0,.1)",
+        }}
+      />
       <h2>🔥 Example</h2>
       <p>
         👉 /api/hello?file=<strong>{"{file-path}"}</strong>&callback=

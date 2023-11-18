@@ -2,6 +2,8 @@
 
 Arbitrary File Read Vulnerability in Chrome Versions Prior to 116
 
+![demo](/public/demo.jpg)
+
 ## 🔥 Example
 
 👉 /api/hello?path=`file-path`&callback=`url`
