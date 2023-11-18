@@ -14,13 +14,14 @@ const App = () => {
       <p>Arbitrary File Read Vulnerability in Chrome Versions Prior to 116</p>
       <h2>🔥 Example</h2>
       <p>
-        GET /api/hello?file=<strong>{"{file-path}"}</strong>
+        👉 /api/hello?file=<strong>{"{file-path}"}</strong>&callback=
+        <strong>{"{url}"}</strong>
       </p>
       <a
-        href="https://all-seeing-eye-six.vercel.app/api/hello?file=/etc/passwd"
+        href="https://all-seeing-eye-six.vercel.app/api/hello?path=file:///etc/passwd"
         target="_blank"
       >
-        https://all-seeing-eye-six.vercel.app/api/hello?file=/etc/passwd
+        https://all-seeing-eye-six.vercel.app/api/hello?path=file:///etc/passwd
       </a>
       <h2>🐛 Bug Report</h2>
       <p>

@@ -4,10 +4,10 @@ Arbitrary File Read Vulnerability in Chrome Versions Prior to 116
 
 ## 🔥 Example
 
-GET /api/hello?file=`file-path`
+👉 /api/hello?path=`file-path`&callback=`url`
 
 ```
-https://all-seeing-eye-six.vercel.app/api/hello?file=/etc/passwd
+https://all-seeing-eye-six.vercel.app/api/hello?path=file:///etc/passwd
 ```
 
 ## 🐛 Bug Report
@@ -15,7 +15,6 @@ https://all-seeing-eye-six.vercel.app/api/hello?file=/etc/passwd
 Insufficient validation of untrusted input in XML in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to bypass file access restrictions via a crafted HTML page. (Chromium security severity: Medium)
 
 [https://bugs.chromium.org/p/chromium/issues/detail?id=1458911](https://bugs.chromium.org/p/chromium/issues/detail?id=1458911)
-
 
 ## ⚠️ Disclaimer
 
