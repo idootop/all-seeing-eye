@@ -1,3 +1,4 @@
+import "./global.css";
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
@@ -16,17 +17,7 @@ export const viewport: Viewport = {
 export default function Layout({ children }) {
   return (
     <html lang="en">
-      <body
-        style={{
-          width: "100vw",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

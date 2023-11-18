@@ -2,8 +2,10 @@ const App = () => {
   return (
     <div
       style={{
+        width: "100%",
+        margin: "0 auto",
         maxWidth: "640px",
-        padding: "60px 20px",
+        padding: "20px",
       }}
     >
       <h1>👀 All-Seeing Eye</h1>
@@ -17,8 +19,8 @@ const App = () => {
         alt="demo"
         style={{
           width: "100%",
-          borderRadius: "10px",
-          boxShadow: "0 10px 32px rgba(0,0,0,.1)",
+          borderRadius: "8px",
+          boxShadow: "0 10px 20px rgba(0,0,0,.1)",
         }}
       />
       <h2>🔥 Example</h2>
